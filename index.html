@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting with AngularJS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="sortingApp" ng-controller="SortingController">
+
+    <div class="container">
+        <h1>Sorting Algorithm with AngularJS</h1>
+        <div>
+            <label for="inputArray">Enter Array (comma separated):</label>
+            <input type="text" id="inputArray" ng-model="inputArray" placeholder="e.g., 5,2,8,1,3">
+            <button ng-click="sortArray()">Sort Array</button>
+        </div>
+
+        <div>
+            <h3>Original Array:</h3>
+            <p>{{array}}</p>
+        </div>
+
+        <div>
+            <h3>Sorted Array:</h3>
+            <p>{{sortedArray}}</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
